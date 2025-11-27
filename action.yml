@@ -1,0 +1,16 @@
+name: "AI PR Review via OpenRouter"
+description: "Analyzes pull request diffs with OpenRouter and posts/update a single PR comment."
+author: "AI PR Reviewer"
+inputs:
+  openrouter_api_key:
+    description: "OpenRouter API key (store as a GitHub secret)."
+    required: true
+  model:
+    description: "OpenRouter model name to query."
+    required: true
+  prompt_template:
+    description: "Prompt template containing {{DIFF}} placeholder for the full PR diff."
+    required: true
+runs:
+  using: "node20"
+  main: "dist/index.js"

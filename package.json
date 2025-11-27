@@ -1,0 +1,16 @@
+{
+  "name": "ai-pr-reviewer",
+  "version": "0.1.0",
+  "private": true,
+  "description": "GitHub Action that sends PR diffs to OpenRouter for AI review and posts a single PR comment.",
+  "main": "dist/index.js",
+  "scripts": {
+    "lint": "echo \"Add lint tooling (e.g., eslint)\"",
+    "test": "echo \"Add tests\"",
+    "build": "echo \"Add bundling (e.g., ncc) if needed\""
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT"
+}
