@@ -87,9 +87,9 @@ function buildCommentBody(model, message) {
   return [
     MARKER,
     `AI Code Review (model: ${model})`,
-    'Найденные проблемы:',
+    'Founded issues:',
     message,
-    'Обновлено автоматически после последнего push.',
+    'Automatically updated after last push.',
   ].join('\n');
 }
 
@@ -223,7 +223,7 @@ async function main() {
       statusNote = 'OpenRouter request succeeded.';
     } catch (error) {
       console.error('OpenRouter request failed:', error.message);
-      reviewText = `Не удалось получить ответ от OpenRouter: ${error.message}`;
+      reviewText = `No response from OpenRouter: ${error.message}`;
       statusNote = 'Posting error message instead of analysis.';
     }
   }
